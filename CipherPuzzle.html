@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="main.css">
+        <script>
+        function checkAnswer() {
+            const answer = document.getElementById("answer").value;
+            if (answer === "Merry Christmas!") {
+                alert("Good job! Take a screenshot of this message and proceed to the library to get your next clue.");
+            } else {
+                alert("Incorrect answer. Try again!");
+            }
+        }
+        </script>
+    </head>
+<h1></h1>
+    <p>Solve the problem with a cipher.</p>
+    <p>The wind howled outside as Santa sat in his quiet study, holding an ancient scroll sealed with a golden laurel stamp. The parchment bore only a single line of cryptic text:</p>
+    <p><b>Btggn Rwgxhibph!</b></p>
+    <p>There was no salutation, no sender. Only a brief note scribbled at the bottom: </p>
+    <p>“To unlock the gift of time, follow the footsteps of a leader by the river.”</p>
+    <p>Santa furrowed his brow. “Time… a leader… the river.” He reached for a dusty book labeled Forgotten Codes of Antiquity. On its first page, the name of a Roman general stood out boldly. "Ah, Julius... it seems you’ve left another challenge.”</p>
+    <p>He studied the scroll again. “Fifteen winters past the first day... perhaps that’s the answer,” he mused. Pulling out his trusty cipher wheel, Santa aligned the letters and began to decode.</p>
+    <label for = "username">Answer:</label>
+    <input type = "text" id = "answer" name = "answer" maxlength = 16>
+    <button class = "button button1" onclick = "checkAnswer()">Confirm</button>
+</body>
+</html> 

@@ -201,7 +201,7 @@ function endGame() {
         timerElement.innerHTML = "You ran out of time and lost! Please start a new game.";
     } else {
         console.log("Setting timer message to 'You won!'");
-        timerElement.innerHTML = 'You won! Click <a href="puzzle3.html">here</a> to proceed to the next puzzle.';
+        timerElement.innerHTML = 'You won! Take another screenshot of this message and go back to the library.';
     }
 
     console.log("Final Timer Message:", timerElement.innerHTML);
