@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <h1>FINAL PUZZLEEEEEE!!!!!!</h1>
+        <link rel="stylesheet" href="main.css">
+        <script>
+            function checkAnswer() {
+                const answer = document.getElementById("answer").value.toLowerCase();
+                if (answer === "christmas tree") {
+                    alert("Good job! Take a screenshot of this message and proceed to the library to see if you won!");
+                } else {
+                    alert("Incorrect answer. Try again!");
+                }
+            }
+            </script>
+    </head>
+    <body>
+        <p>For your final puzzle, you will be solving a very simple question!</p>
+        <p>The question in mind? What is 3 + 3. Goodluck, gamechanger! Merry Christmas!!</p>
+        <label for = "username">Answer:</label>
+        <input type = "text" id = "answer" name = "answer" maxlength = 16>
+        <button class = "button button1" onclick = "checkAnswer()">Confirm</button>
+    </body>
+</html>
