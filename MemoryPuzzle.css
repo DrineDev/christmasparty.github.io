@@ -1,0 +1,72 @@
+
+/* General reset for margins and padding */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Body setup */
+body {
+  font-family: Arial, sans-serif; /* Optional: Change to desired font */
+  background-color: #060AB2;
+  background-color: #000000;
+  display: flex;
+  flex-direction: column; /* Stack content vertically */
+  align-items: center;
+  justify-content: flex-start;
+  height: 100vh; /* Full viewport height */
+  margin: 0;
+}
+
+/* Header for the text section */
+.game-header {
+  text-align: center;
+  margin-top: 20px; /* Optional space above the text */
+  color: #f8f8f8;
+  font-size: 20px; /* Adjust font size */
+  padding: 10px;
+}
+
+/* Memory game container */
+.memory-game {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center cards horizontally */
+  margin-top: 40px; /* Add space between the header and memory game */
+  width: 640px; /* Adjust based on your desired game width */
+  height: 640px; /* Adjust based on your desired game height */
+  perspective: 1000px;
+}
+
+/* Memory card styling */
+.memory-card {
+  width: calc(25% - 10px);
+  height: calc(33.333% - 10px);
+  margin: 5px;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform .5s;
+  box-shadow: 1px 1px 1px rgba(0,0,0,.3);
+}
+
+/* Flip effect */
+.memory-card.flip {
+  transform: rotateY(180deg);
+}
+
+.front-face,
+.back-face {
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  position: absolute;
+  border-radius: 5px;
+  background: #f8f8f8;
+  backface-visibility: hidden;
+}
+
+.front-face {
+  transform: rotateY(180deg);
+}
+
