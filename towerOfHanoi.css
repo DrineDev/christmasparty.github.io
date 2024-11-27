@@ -115,17 +115,17 @@ input:checked + label + .disc {
 input:focus + input:checked + input + input + label + .disc {
     order: 1;
     transition: order 0s;
-    animation: float 3s ease-in-out infinite alternate;
+    animation: float 1s ease-in-out infinite alternate;
 }
 input:focus + input + input:checked + input + label + .disc {
     order: 4;
     transition: order 0s;
-    animation: float 3s ease-in-out infinite alternate;
+    animation: float 1s ease-in-out infinite alternate;
 }
 input:focus + input + input + input:checked + label + .disc {
     order: 7;
     transition: order 0s;
-    animation: float 3s ease-in-out infinite alternate;
+    animation: float 1s ease-in-out infinite alternate;
 }
 @keyframes float {
     50% {
@@ -155,7 +155,7 @@ input + input + input + input:active + label + .disc {
         #ff0000 10%,
         #ffffff 10%,
         #ffffff 20%
-    ); /* Red and white candy cane stripes */
+    );
 }
 .two {
     margin: 0 8vmin;
@@ -166,7 +166,7 @@ input + input + input + input:active + label + .disc {
         #4caf50 10%,
         #ffffff 10%,
         #ffffff 20%
-    ); /* Green and white stripes */
+    );
 }
 .three {
     margin: 0 6vmin;
@@ -177,7 +177,7 @@ input + input + input + input:active + label + .disc {
         #f1c40f 10%,
         #ff0000 10%,
         #ff0000 20%
-    ); /* Gold and red stripes */
+    );
 }
 .four {
     margin: 0 4vmin;
@@ -188,7 +188,7 @@ input + input + input + input:active + label + .disc {
         #b22222 10%,
         #ffffff 10%,
         #ffffff 20%
-    ); /* Deep red and white stripes */
+    );
 }
 .five {
     margin: 0 2vmin;
@@ -199,7 +199,7 @@ input + input + input + input:active + label + .disc {
         #2ecc71 10%,
         #ffffff 10%,
         #ffffff 20%
-    ); /* Green and white stripes */
+    );
 }
 .six {
     width: 30vmin;
@@ -209,7 +209,7 @@ input + input + input + input:active + label + .disc {
         #ff0000 10%,
         #4caf50 10%,
         #4caf50 20%
-    ); /* Red and green stripes */
+    );
 }
 
 
@@ -255,7 +255,6 @@ input[readonly]:focus + input + input + input:checked ~ .c {
 }
 
 /* Winning */
-/* Winning */
 .win {
     z-index: 7;
     position: absolute;
@@ -271,10 +270,12 @@ input[readonly]:focus + input + input + input:checked ~ .c {
     pointer-events: none;
     transition: opacity 0.3s;
 }
+
 input:nth-child(6n + 4):checked ~ input:nth-child(6n + 4):checked ~ input:nth-child(6n + 4):checked ~ input:nth-child(6n + 4):checked ~ input:nth-child(6n + 4):checked ~ input:nth-child(6n + 4):checked ~ .win {
     opacity: 1;
     pointer-events: initial;
 }
+
 /* Everything Else */
 body {
     color: #f8f8f8;
