@@ -255,6 +255,7 @@ input[readonly]:focus + input + input + input:checked ~ .c {
 }
 
 /* Winning */
+/* Winning */
 .win {
     z-index: 7;
     position: absolute;
@@ -270,7 +271,7 @@ input[readonly]:focus + input + input + input:checked ~ .c {
     pointer-events: none;
     transition: opacity 0.3s;
 }
-input:nth-child(6n + 4):checked ~ .win {
+input:nth-child(6n + 4):checked ~ input:nth-child(6n + 4):checked ~ input:nth-child(6n + 4):checked ~ input:nth-child(6n + 4):checked ~ input:nth-child(6n + 4):checked ~ input:nth-child(6n + 4):checked ~ .win {
     opacity: 1;
     pointer-events: initial;
 }
