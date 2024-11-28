@@ -32,6 +32,7 @@ body {
 .memory-game {
   display: flex;
   flex-wrap: wrap;
+  grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
   justify-content: center; /* Center cards horizontally */
   margin-top: 40px; /* Add space between the header and memory game */
   width: 640px; /* Adjust based on your desired game width */
